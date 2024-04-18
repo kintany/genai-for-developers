@@ -1,0 +1,17 @@
+modules:
+  jira:issuePanel:
+    - key: devai-jira-ui-hello-world-issue-panel
+      resource: main
+      resolver:
+        function: resolver
+      render: native
+      title: devai-jira-ui
+      icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  id: ari:cloud:ecosystem::app/1b74d38e-890e-4fcd-88d8-62f2965e103f
